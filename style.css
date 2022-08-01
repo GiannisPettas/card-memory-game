@@ -1,0 +1,33 @@
+#gameboard{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #faf4d1;
+  margin-top: 1em;
+}
+
+.gm-image-holder {
+  flex: 12.5%;
+  width:50px;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #faf4d1;
+}
+
+.gm-image-holder>img{
+  transition:all .3s;
+  width:95%;
+}
+
+@media only screen and (max-width: 600px) {
+  .gm-image-holder {
+    flex: 25%;
+  }
+}
